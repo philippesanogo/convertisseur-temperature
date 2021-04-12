@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Convertisseur</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Convertisseur de température</h1>
+        <p>Autrefois, en fonction de la température du corps, exposée à une température extérieure, on évaluait le froid ressenti ou la chaleur ressentie sur une échelle spéculative. Puis il y eut les thermomètres...</p>
+        <p>Formule pour une conversion de <b>Celsius</b> à <b>Fahrenheit</b> : <mark><b>°F = (1,8 * °C) + 32</b></mark></p>
+        <p>Formule pour une conversion de <b>Celsius</b> à <b>Kelvin</b> : <mark><b>K = °C + 273,15</b></mark></p>
+        <hr>
+
+        <p>Formule pour une conversion de <b>Fahrenheit</b> à <b>Celsius</b> : <mark><b>°C = (°F - 32) / 1,8</b></mark></p>
+        <p>Formule pour une conversion de <b>Fahrenheit</b> à <b>Kelvin</b> : <mark><b>K = (°F + 459,67) * 5/9</b></mark></p>
+        <hr>
+
+        <p>Formule pour une conversion de <b>Kelvin</b> à <b>Celsius</b> : <mark><b>°C = K - 273,15</b></mark></p>
+        <p>Formule pour une conversion de <b>Kelvin</b> à <b>Fahrenheit</b> : <mark><b>°F = (K * 1,8) - 459,67</b></mark></p>
+        <hr>
+        
+        <form>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="celsius">Degrés Celsius :</label>
+                        <input type="number" id="celsius" class="form-control celsius" placeholder="">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="fahrenheit">Degrés Fahrenheit :</label>
+                        <input type="number" id="fahrenheit" class="form-control fahrenheit" placeholder="">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="kelvin">kelvin :</label>
+                        <input type="number" id="kelvin" class="form-control kelvin" placeholder="">
+                    </div>
+                </div>
+            </div>
+                  
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
